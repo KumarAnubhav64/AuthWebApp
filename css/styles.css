@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;    
+    font-family: "Figtree";          
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+#title{
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+/* .container{
+    
+    background-image: linear-gradient(rgba(5, 5, 14, 0.5),rgba(4, 4, 40, 0.8)),url(/asset/images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+} */
+.form-box{
+    width: 90%;
+    max-width: 420px;
+    margin-top: 30px ;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 50px 60px;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background-image: linear-gradient(rgba(87, 35, 35, 0.3));
+    filter: drop-shadow(10px 10px 10px rgba(255,255,255,0.2));
+}
+@media screen and (max-height:700px) {
+.form-box{
+    width: 90%;
+    max-width: 420px;
+    margin-top: 30px ;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 50px 60px;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background-image: linear-gradient(rgba(87, 35, 35, 0.3));
+    filter: drop-shadow(10px 10px 10px rgba(255,255,255,0.2));
+}}
+    
+.form-box h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #ff4c68;
+    position: relative;
+}
+/* .form-box::after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    border-radius: 3px;
+    background: #422ca2;
+    position: absolute;
+    bottom: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color : #999;
+}
+.lost-password{
+    margin-top: 30px;
+}
+.lost-password p{
+    text-align: left;
+    font-size: 13px;
+}
+.forgot{
+    text-decoration: none;
+    color: #e41635;
+}
+.btn-feild{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-feild button{
+    flex-basis: 48%;
+    background: #ff4c68;
+    color: #fff;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+button:active{
+    flex-basis: 48%;
+    background: #f08e9d;
+    color: #fff;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.disable{
+    background: #555;
+    border:red;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.items{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    left: 40%;
+    justify-content: space-between;
+}
+.logo{
+    display: inline-block;
+    width: 40%;
+    align-items: right;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    text-shadow: -1px 1px 0 rgb(143, 128, 128);
+
+}
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    padding: 10px 1px;
+}
